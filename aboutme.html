@@ -175,207 +175,87 @@
     <img class="profile" src="pic/name.png" alt="個人圖示">
   </main>
 
-<table class="style8">        
-    <tr>            
-        <td align="center">&nbsp;</td>            
-        <td align="left" width="160">&nbsp;</td>        
-    </tr>        
-    <tr>            
-        <td align="center">                
-            <span id="ctl00_ContentPlaceHolder1_Label1" style="color:#1F4E79;font-size:16pt;font-weight:bold;">我的課表</span>            
-        </td>            
-        <td align="left" width="160">&nbsp;</td>        
-    </tr>        
-    <tr>            
-        <td align="center">                
-            <br />                
-            <div>	
-<table class="style8">        
-    <tr>            
-        <td align="center">&nbsp;</td>            
-        <td align="left" width="160">&nbsp;</td>        
-    </tr>        
-    <tr>            
-        <td align="center">                
-            <span id="ctl00_ContentPlaceHolder1_Label1" style="color:#1F4E79;font-size:16pt;font-weight:bold;">我的課表</span>            
-        </td>            
-        <td align="left" width="160">&nbsp;</td>        
-    </tr>        
-    <tr>            
-        <td align="center">                
-            <br />                
-            <div>	
-                <table cellspacing="0" cellpadding="6" rules="all" border="1" id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt" style="background-color:White;border-color:#B0C4DE;border-width:1px;border-style:solid;border-collapse:collapse;font-family:sans-serif;text-align:center;">		
-                    <!-- 1-1. 表格上方標題 -->
-                    <caption style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px; color: #1F4E79;">113學年度 第一學期 個人課表</caption>
-                    
-                    <!-- 1-2. 欄位上方標題格 (星期) -->
-                    <tr style="color:White;background-color:#1F4E79;font-weight:bold;height:35px;">			
-                        <th scope="col" style="width:110px;">時間／星期</th>
-                        <th scope="col" style="width:100px;">一</th>
-                        <th scope="col" style="width:100px;">二</th>
-                        <th scope="col" style="width:100px;">三</th>
-                        <th scope="col" style="width:100px;">四</th>
-                        <th scope="col" style="width:100px;">五</th>
-                        <th scope="col" style="width:100px;">六</th>
-                        <th scope="col" style="width:100px;">日</th>		
-                    </tr>
+<!-- 引入 W3.CSS 樣式表 (包含 Hoverable 功能) -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-                    <!-- 第1節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第1節<br/>08:10 ~ 09:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+<!-- ［我的課表］段落 -->
+<section>
+    <div style="color: #1F4E79; font-size: 16pt; font-weight: bold; margin-bottom: 10px;">我的課表</div>
+    
+    <div>    
+        <!-- 1-5. 使用 W3.CSS 的 w3-table, w3-bordered 與 w3-hoverable (滑鼠滑過會變色) -->
+        <table class="w3-table w3-bordered w3-hoverable" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%;">        
+            
+            <!-- 1-1. 表格上方標題 -->
+            <caption style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px; color: #1F4E79;">113學年度 第一學期 個人課表</caption>
+            
+            <!-- 1-2. 欄位上方標題格 (星期) -->
+            <tr style="color:White; background-color:#1F4E79; font-weight:bold; height:35px;">            
+                <th scope="col" style="width:110px; text-align:center;">時間／星期</th>
+                <th scope="col" style="text-align:center;">一</th>
+                <th scope="col" style="text-align:center;">二</th>
+                <th scope="col" style="text-align:center;">三</th>
+                <th scope="col" style="text-align:center;">四</th>
+                <th scope="col" style="text-align:center;">五</th>
+                <th scope="col" style="text-align:center;">六</th>
+                <th scope="col" style="text-align:center;">日</th>        
+            </tr>
 
-                    <!-- 第2節 (包含多堂連上3節的跨列合併 rowspan="3") -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第2節<br/>09:10 ~ 10:00</th>
-                        <!-- 1-3. 跨列合併 2~4節 -->
-                        <!-- 1-4. 不同課程使用不同底色 -->
-                        <td rowspan="3" style="background-color:#FFF2CC;">網頁設計<br/>丁介人<br/>T0806</td>
-                        <td rowspan="3" style="background-color:#E2EFDA;">行銷管理<br/>曾碧卿<br/>T0804</td>
-                        <td></td>
-                        <td rowspan="3" style="background-color:#FCE4D6;">資料庫系統<br/>丁介人<br/>T0806</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 第1節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第1節<br/>08:10 ~ 09:00</th>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 第3節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第3節<br/>10:10 ~ 11:00</th>
-                        <!-- 1-3. 跨列合併 3~4節 -->
-                        <td rowspan="2" style="background-color:#D9E1F2;">現代文學導讀<br/>羅夏美<br/>T0104</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 第2節 (1-3. 跨列合併 rowspan="3") -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第2節<br/>09:10 ~ 10:00</th>
+                <!-- 1-4. 不同課程使用不同底色與教室 -->
+                <td rowspan="3" style="background-color:#FFF2CC; vertical-align:middle;">網頁設計<br/>丁介人<br/>T0806</td>
+                <td rowspan="3" style="background-color:#E2EFDA; vertical-align:middle;">行銷管理<br/>曾碧卿<br/>T0804</td>
+                <td></td>
+                <td rowspan="3" style="background-color:#FCE4D6; vertical-align:middle;">資料庫系統<br/>丁介人<br/>T0806</td>
+                <td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 第4節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第4節<br/>11:10 ~ 12:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 第3節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第3節<br/>10:10 ~ 11:00</th>
+                <td rowspan="2" style="background-color:#D9E1F2; vertical-align:middle;">現代文學導讀<br/>羅夏美<br/>T0104</td>
+                <td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 1-3. 跨欄合併：午休時間 (colspan="7") -->
-                    <tr style="background-color:#EAECEE;font-weight:bold;color:#555555;">
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">午休<br/>12:00 ~ 12:50</th>
-                        <td colspan="7">午休 / 用餐時間</td>
-                    </tr>
+            <!-- 第4節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第4節<br/>11:10 ~ 12:00</th>
+                <td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 第5節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第5節<br/>12:50 ~ 13:40</th>
-                        <!-- 1-3. 跨列合併 5~7節 -->
-                        <td rowspan="3" style="background-color:#E1D5E7;">統計學<br/>陳忠和<br/>T0104</td>
-                        <td style="background-color:#F8CECC;">導師時間<br/>王鵬森<br/>T0804</td>
-                        <!-- 1-3. 跨列合併 5~6節 -->
-                        <td rowspan="2" style="background-color:#D5E8D4;">台灣與世界<br/>盧彥光<br/>W0404</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 1-3. 跨欄合併：午休時間 (colspan="7") -->
+            <tr style="background-color:#EAECEE; font-weight:bold; color:#555555;">
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">午休<br/>12:00 ~ 12:50</th>
+                <td colspan="7">午休 / 用餐時間</td>
+            </tr>
 
-                    <!-- 第6節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第6節<br/>13:50 ~ 14:40</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 第5節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第5節<br/>12:50 ~ 13:40</th>
+                <td rowspan="3" style="background-color:#E1D5E7; vertical-align:middle;">統計學<br/>陳忠和<br/>T0104</td>
+                <td style="background-color:#F8CECC; vertical-align:middle;">導師時間<br/>王鵬森<br/>T0804</td>
+                <td rowspan="2" style="background-color:#D5E8D4; vertical-align:middle;">台灣與世界<br/>盧彥光<br/>W0404</td>
+                <td></td><td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 第7節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第7節<br/>14:50 ~ 15:40</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
+            <!-- 第6節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第6節<br/>13:50 ~ 14:40</th>
+                <td></td><td></td><td></td><td></td><td></td>        
+            </tr>
 
-                    <!-- 第8節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第8節<br/>15:50 ~ 16:40</th>
-                        <!-- 1-3. 跨列合併 8~9節 -->
-                        <td rowspan="2" style="background-color:#DAE8FC;">體育生活(三)：網球<br/>陳新福</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
-
-                    <!-- 第9節 -->
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第9節<br/>16:50 ~ 17:40</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
-
-                    <!-- 夜間課程分隔區 -->
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第11節<br/>18:20 ~ 19:05</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第12節<br/>19:05 ~ 19:50</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第13節<br/>20:00 ~ 20:45</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第14節<br/>20:45 ~ 21:30</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>		
-                    </tr>	
-                </table>
-            </div> 
-        </td>
-    </tr>
-</table>
+            <!-- 第7節 -->
+            <tr>            
+                <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第7節<br/>14:50 ~ 15:40</th>
+                <td></td><td></td><td></td><td></td><td></td><td>
 
   
   <footer>
