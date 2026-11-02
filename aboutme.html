@@ -9,9 +9,9 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      width: 100%;
-      max-width: 100%;
-      margin: 0;
+      width: calc(100% - 32px);
+      max-width: 1200px;
+      margin: 0 auto;
       font-family: "Microsoft JhengHei", sans-serif;
       line-height: 1.6;
       background: #f7f7f7;
@@ -190,10 +190,7 @@
       <div style="color: #1F4E79; font-size: 16pt; font-weight: bold; margin-bottom: 10px; margin-left: 10px;">我的課表</div>
       
       <div style="width: 100%; overflow-x: auto; padding: 0 10px;">    
-          <!-- 加上 w3-bordered 以顯示格線 -->
           <table class="w3-table w3-bordered w3-hoverable schedule-table" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%; table-layout: fixed; word-break: break-word;">
-              
-              <!-- 欄位上方標題格 (星期) -->
               <tr style="color:White; background-color:#1F4E79; font-weight:bold; height:35px;">            
                   <th scope="col" style="width:11%; text-align:center;">時間／星期</th>
                   <th scope="col" style="width:12.7%; text-align:center;">一</th>
@@ -205,13 +202,11 @@
                   <th scope="col" style="width:12.7%; text-align:center;">日</th>        
               </tr>
 
-              <!-- 第1節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第1節<br/>08:10 ~ 09:00</th>
                   <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第2節 (跨列合併 rowspan="3") -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第2節<br/>09:10 ~ 10:00</th>
                   <td rowspan="3" style="background-color:#FFF2CC; vertical-align:middle;">網頁設計<br/>丁介人<br/>T0806</td>
@@ -221,26 +216,22 @@
                   <td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第3節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第3節<br/>10:10 ~ 11:00</th>
                   <td rowspan="2" style="background-color:#D9E1F2; vertical-align:middle;">現代文學導讀<br/>羅夏美<br/>T0104</td>
                   <td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第4節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第4節<br/>11:10 ~ 12:00</th>
                   <td></td><td></td><td></td>        
               </tr>
 
-              <!-- 跨欄合併：午休時間 (colspan="7") -->
               <tr style="background-color:#EAECEE; font-weight:bold; color:#555555;">
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">午休<br/>12:00 ~ 12:50</th>
                   <td colspan="7">午休 / 用餐時間</td>
               </tr>
 
-              <!-- 第5節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第5節<br/>12:50 ~ 13:40</th>
                   <td rowspan="3" style="background-color:#E1D5E7; vertical-align:middle;">統計學<br/>陳忠和<br/>T0104</td>
@@ -249,32 +240,27 @@
                   <td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第6節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第6節<br/>13:50 ~ 14:40</th>
                   <td></td><td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第7節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第7節<br/>14:50 ~ 15:40</th>
                   <td></td><td></td><td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第8節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第8節<br/>15:50 ~ 16:40</th>
                   <td rowspan="2" style="background-color:#DAE8FC; vertical-align:middle;">體育生活(三)：網球<br/>陳新福</td>
                   <td></td><td></td><td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 第9節 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第9節<br/>16:50 ~ 17:40</th>
                   <td></td><td></td><td></td><td></td><td></td><td></td>        
               </tr>
 
-              <!-- 夜間課程 -->
               <tr>            
                   <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第11節<br/>18:20 ~ 19:05</th>
                   <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
