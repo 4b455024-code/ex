@@ -8,14 +8,19 @@
   <title>蔣承祐 - 關於我</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      width: calc(100% - 32px);
-      max-width: 1200px;
-      margin: 0 auto;
+      margin: 0;
       font-family: "Microsoft JhengHei", sans-serif;
       line-height: 1.6;
       background: #f7f7f7;
       color: #222;
+    }
+
+    .page-wrap {
+      width: calc(100% - 32px);
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     header {
@@ -99,192 +104,189 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>頁首: Hello, World!!</h1>
-    <h4>好網頁</h4>
-  </header>
+  <div class="page-wrap">
+    <header>
+      <h1>頁首: Hello, World!!</h1>
+      <h4>好網頁</h4>
+    </header>
 
-  <nav aria-label="主導覽列">
-    <ul>
-      <li><a href="index.html"><i class="fa fa-server" aria-hidden="true"></i> 導覽列</a></li>
-      <li><a href="aboutme.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 關於我</a></li>
-      <li><a href="album.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 我的相簿</a></li>
-      <li><span><i class="fa fa-thumbs-up" aria-hidden="true"></i> 作品集</span></li>
-      <li><span><i class="fa fa-file" aria-hidden="true"></i> 資料</span></li>
-      <li><span><i class="fa fa-file-text-o" aria-hidden="true"></i> 收藏</span></li>
-      <li><a href="questionnaire.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 問卷表單</a></li>
-      
-    </ul>
-  </nav>
-
-  <main>
-    <h1><i class="fa fa-user" aria-hidden="true"></i> 個人簡介與履歷</h1>
-
-    <div class="toc">
+    <nav aria-label="主導覽列">
       <ul>
-        <li><a href="#section1">1. 基本資料與注音</a></li>
-        <li><a href="#section2">2. 學習歷程與技能</a></li>
-        <li><a href="#section3">3. 座右銘與心得</a></li>
-        <li><a href="#section4">4. 相關連結</a></li>
+        <li><a href="index.html"><i class="fa fa-server" aria-hidden="true"></i> 導覽列</a></li>
+        <li><a href="aboutme.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 關於我</a></li>
+        <li><a href="album.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 我的相簿</a></li>
+        <li><span><i class="fa fa-thumbs-up" aria-hidden="true"></i> 作品集</span></li>
+        <li><span><i class="fa fa-file" aria-hidden="true"></i> 資料</span></li>
+        <li><span><i class="fa fa-file-text-o" aria-hidden="true"></i> 收藏</span></li>
+        <li><a href="questionnaire.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 問卷表單</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <section id="section1">
-      <h2>1. 基本資料與注音標示</h2>
-      <p>大家好，我的名字是 <ruby>蔣<rt>ㄐㄧㄤˇ</rt>承<rt>ㄔㄥˊ</rt>祐<rt>ㄧㄡˋ</rt></ruby>。</p>
-      <p>目前就讀於南台科技大學，這是一段介紹文字。我對網頁設計與電子商務領域抱有濃厚的興趣，平時喜歡研究網頁前端技術與各類資訊新知。[...]</p>
-      <p>文字格式展示：<b>粗體文字 (B)</b>、<i>斜體文字 (I)</i>、<u>底線文字 (U)</u>、<s>刪除線文字 (S)</s>，以及 <mark>螢光標記文字 (mark)</mark>。</p>
-    </section>
+    <main>
+      <h1><i class="fa fa-user" aria-hidden="true"></i> 個人簡介與履歷</h1>
 
-    <hr>
-
-    <section id="section2">
-      <h3>2. 學習歷程與技能</h3>
-      <p>在大學期間，我參與了多項課程與專題製作，以下是我主要學習的內容：</p>
-
-      <h4>修課優先順序（項目編號）：</h4>
-      <ol>
-        <li>網頁程式設計 (HTML / CSS / JavaScript)</li>
-        <li>電子商務概論與實務</li>
-        <li>資料庫管理系統</li>
-      </ol>
-
-      <h4>具備技能與興趣（項目符號）：</h4>
-      <ul>
-        <li>HTML5 & CSS3 網頁版面配置</li>
-        <li>靜態網頁設計與元件整合</li>
-        <li>團隊合作與專題開發</li>
-      </ul>
-    </section>
-
-    <hr>
-
-    <section id="section3">
-      <h4>3. 座右銘與引述</h4>
-      <p>這是我在學習網頁設計過程中最喜歡的一句話，時常提醒自己要保持學習熱情：</p>
-      <blockquote>
-        「學習寫程式就像是學一門新的語言，起初雖然困難，但當你能夠用它創造出作品時，成就感是無與倫比的。」
-      </blockquote>
-      <p>透過不斷修訂程式碼，我們可以掌握更完美的架構與排版手法。</p>
-    </section>
-
-    <hr>
-
-    <section id="section4">
-      <h5>4. 相關連結</h5>
-      <p>歡迎點擊下方連結造訪相關網站：</p>
-      <p>
-        <a href="https://www.stust.edu.tw/" target="_blank">南台科技大學首頁</a><br>
-        <a href="https://flipclass.stust.edu.tw/" target="_blank">南台 FlipClass 數位學習平台</a>
-      </p>
-    </section>
-
-    <img class="profile" src="pic/name.png" alt="個人圖示">
-  </main>
-
-  <!-- 引入 W3.CSS 樣式表 -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- ［我的課表］段落 -->
-  <section>
-      <div style="color: #1F4E79; font-size: 16pt; font-weight: bold; margin-bottom: 10px; margin-left: 10px;">我的課表</div>
-      
-      <div style="width: 100%; overflow-x: auto; padding: 0 10px;">    
-          <table class="w3-table w3-bordered w3-hoverable schedule-table" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%; table-layout: fixed; word-break: break-word;">
-              <tr style="color:White; background-color:#1F4E79; font-weight:bold; height:35px;">            
-                  <th scope="col" style="width:11%; text-align:center;">時間／星期</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">一</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">二</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">三</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">四</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">五</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">六</th>
-                  <th scope="col" style="width:12.7%; text-align:center;">日</th>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第1節<br/>08:10 ~ 09:00</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第2節<br/>09:10 ~ 10:00</th>
-                  <td rowspan="3" style="background-color:#FFF2CC; vertical-align:middle;">網頁設計<br/>丁介人<br/>T0806</td>
-                  <td rowspan="3" style="background-color:#E2EFDA; vertical-align:middle;">行銷管理<br/>曾碧卿<br/>T0804</td>
-                  <td></td>
-                  <td rowspan="3" style="background-color:#FCE4D6; vertical-align:middle;">資料庫系統<br/>丁介人<br/>T0806</td>
-                  <td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第3節<br/>10:10 ~ 11:00</th>
-                  <td rowspan="2" style="background-color:#D9E1F2; vertical-align:middle;">現代文學導讀<br/>羅夏美<br/>T0104</td>
-                  <td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第4節<br/>11:10 ~ 12:00</th>
-                  <td></td><td></td><td></td>        
-              </tr>
-
-              <tr style="background-color:#EAECEE; font-weight:bold; color:#555555;">
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">午休<br/>12:00 ~ 12:50</th>
-                  <td colspan="7">午休 / 用餐時間</td>
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第5節<br/>12:50 ~ 13:40</th>
-                  <td rowspan="3" style="background-color:#E1D5E7; vertical-align:middle;">統計學<br/>陳忠和<br/>T0104</td>
-                  <td style="background-color:#F8CECC; vertical-align:middle;">導師時間<br/>王鵬森<br/>T0804</td>
-                  <td rowspan="2" style="background-color:#D5E8D4; vertical-align:middle;">台灣與世界<br/>盧彥光<br/>W0404</td>
-                  <td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第6節<br/>13:50 ~ 14:40</th>
-                  <td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第7節<br/>14:50 ~ 15:40</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第8節<br/>15:50 ~ 16:40</th>
-                  <td rowspan="2" style="background-color:#DAE8FC; vertical-align:middle;">體育生活(三)：網球<br/>陳新福</td>
-                  <td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第9節<br/>16:50 ~ 17:40</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第11節<br/>18:20 ~ 19:05</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第12節<br/>19:05 ~ 19:50</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第13節<br/>20:00 ~ 20:45</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>
-              <tr>            
-                  <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第14節<br/>20:45 ~ 21:30</th>
-                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
-              </tr>    
-          </table>
+      <div class="toc">
+        <ul>
+          <li><a href="#section1">1. 基本資料與注音</a></li>
+          <li><a href="#section2">2. 學習歷程與技能</a></li>
+          <li><a href="#section3">3. 座右銘與心得</a></li>
+          <li><a href="#section4">4. 相關連結</a></li>
+        </ul>
       </div>
-  </section>
 
-  
-  <footer>
-    <p>頁尾 &copy; 2026 南台公司</p>
-    <p><a href="#">Back to top</a></p>
-  </footer>
+      <section id="section1">
+        <h2>1. 基本資料與注音標示</h2>
+        <p>大家好，我的名字是 <ruby>蔣<rt>ㄐㄧㄤˇ</rt>承<rt>ㄔㄥˊ</rt>祐<rt>ㄧㄡˋ</rt></ruby>。</p>
+        <p>目前就讀於南台科技大學，這是一段介紹文字。我對網頁設計與電子商務領域抱有濃厚的興趣，平時喜歡研究網頁前端技術與各類資訊新知。[...]</p>
+        <p>文字格式展示：<b>粗體文字 (B)</b>、<i>斜體文字 (I)</i>、<u>底線文字 (U)</u>、<s>刪除線文字 (S)</s>，以及 <mark>螢光標記文字 (mark)</mark>。</p>
+      </section>
+
+      <hr>
+
+      <section id="section2">
+        <h3>2. 學習歷程與技能</h3>
+        <p>在大學期間，我參與了多項課程與專題製作，以下是我主要學習的內容：</p>
+
+        <h4>修課優先順序（項目編號）：</h4>
+        <ol>
+          <li>網頁程式設計 (HTML / CSS / JavaScript)</li>
+          <li>電子商務概論與實務</li>
+          <li>資料庫管理系統</li>
+        </ol>
+
+        <h4>具備技能與興趣（項目符號）：</h4>
+        <ul>
+          <li>HTML5 & CSS3 網頁版面配置</li>
+          <li>靜態網頁設計與元件整合</li>
+          <li>團隊合作與專題開發</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="section3">
+        <h4>3. 座右銘與引述</h4>
+        <p>這是我在學習網頁設計過程中最喜歡的一句話，時常提醒自己要保持學習熱情：</p>
+        <blockquote>
+          「學習寫程式就像是學一門新的語言，起初雖然困難，但當你能夠用它創造出作品時，成就感是無與倫比的。」
+        </blockquote>
+        <p>透過不斷修訂程式碼，我們可以掌握更完美的架構與排版手法。</p>
+      </section>
+
+      <hr>
+
+      <section id="section4">
+        <h5>4. 相關連結</h5>
+        <p>歡迎點擊下方連結造訪相關網站：</p>
+        <p>
+          <a href="https://www.stust.edu.tw/" target="_blank">南台科技大學首頁</a><br>
+          <a href="https://flipclass.stust.edu.tw/" target="_blank">南台 FlipClass 數位學習平台</a>
+        </p>
+      </section>
+
+      <img class="profile" src="pic/name.png" alt="個人圖示">
+    </main>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <section>
+      <div style="color: #1F4E79; font-size: 16pt; font-weight: bold; margin-bottom: 10px; margin-left: 10px;">我的課表</div>
+      <div style="width: 100%; overflow-x: auto; padding: 0 10px;">
+        <table class="w3-table w3-bordered w3-hoverable schedule-table" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%; table-layout: fixed; word-break: break-word;">
+          <tr style="color:White; background-color:#1F4E79; font-weight:bold; height:35px;">
+            <th scope="col" style="width:11%; text-align:center;">時間／星期</th>
+            <th scope="col" style="width:12.7%; text-align:center;">一</th>
+            <th scope="col" style="width:12.7%; text-align:center;">二</th>
+            <th scope="col" style="width:12.7%; text-align:center;">三</th>
+            <th scope="col" style="width:12.7%; text-align:center;">四</th>
+            <th scope="col" style="width:12.7%; text-align:center;">五</th>
+            <th scope="col" style="width:12.7%; text-align:center;">六</th>
+            <th scope="col" style="width:12.7%; text-align:center;">日</th>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第1節<br/>08:10 ~ 09:00</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第2節<br/>09:10 ~ 10:00</th>
+            <td rowspan="3" style="background-color:#FFF2CC; vertical-align:middle;">網頁設計<br/>丁介人<br/>T0806</td>
+            <td rowspan="3" style="background-color:#E2EFDA; vertical-align:middle;">行銷管理<br/>曾碧卿<br/>T0804</td>
+            <td></td>
+            <td rowspan="3" style="background-color:#FCE4D6; vertical-align:middle;">資料庫系統<br/>丁介人<br/>T0806</td>
+            <td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第3節<br/>10:10 ~ 11:00</th>
+            <td rowspan="2" style="background-color:#D9E1F2; vertical-align:middle;">現代文學導讀<br/>羅夏美<br/>T0104</td>
+            <td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第4節<br/>11:10 ~ 12:00</th>
+            <td></td><td></td><td></td>
+          </tr>
+
+          <tr style="background-color:#EAECEE; font-weight:bold; color:#555555;">
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">午休<br/>12:00 ~ 12:50</th>
+            <td colspan="7">午休 / 用餐時間</td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第5節<br/>12:50 ~ 13:40</th>
+            <td rowspan="3" style="background-color:#E1D5E7; vertical-align:middle;">統計學<br/>陳忠和<br/>T0104</td>
+            <td style="background-color:#F8CECC; vertical-align:middle;">導師時間<br/>王鵬森<br/>T0804</td>
+            <td rowspan="2" style="background-color:#D5E8D4; vertical-align:middle;">台灣與世界<br/>盧彥光<br/>W0404</td>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第6節<br/>13:50 ~ 14:40</th>
+            <td></td><td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第7節<br/>14:50 ~ 15:40</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第8節<br/>15:50 ~ 16:40</th>
+            <td rowspan="2" style="background-color:#DAE8FC; vertical-align:middle;">體育生活(三)：網球<br/>陳新福</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第9節<br/>16:50 ~ 17:40</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第11節<br/>18:20 ~ 19:05</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第12節<br/>19:05 ~ 19:50</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第13節<br/>20:00 ~ 20:45</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第14節<br/>20:45 ~ 21:30</th>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p>頁尾 &copy; 2026 南台公司</p>
+      <p><a href="#">Back to top</a></p>
+    </footer>
+  </div>
 </body>
 </html>
