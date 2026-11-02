@@ -1,47 +1,143 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <link rel="icon"  href="name.png">
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pic/name.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta charset="urf-8">
   <title>蔣承祐的作業二</title>
-    <style>    
-       *      {margin: 0;  padding: 0;}
-       body   {width: 100%; min-width: 600px; max-width: 960px; margin: 0 auto;}
-       header {width: 100%; background: rgb(255, 99, 71); color:white;}
-       nav    {width: 100%; background: blue;   color:white;}
-       main   {width: 80%;  background: skyblue; height: 300px; float: right;}
-       aside  {width: 20%;  background: pink;    height: 300px; float: left;}
-       footer {width: 100%; background: #eaeaea; clear: both;}
-    </style>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      font-family: "Microsoft JhengHei", sans-serif;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    header {
+      width: 100%;
+      background: rgb(255, 99, 71);
+      color: white;
+      padding: 20px 30px;
+    }
+
+    nav {
+      width: 100%;
+      background: blue;
+      color: white;
+      padding: 12px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    main {
+      width: 80%;
+      background: skyblue;
+      min-height: 300px;
+      padding: 20px;
+    }
+
+    aside {
+      width: 20%;
+      background: pink;
+      min-height: 300px;
+      padding: 20px;
+    }
+
+    footer {
+      width: 100%;
+      background: #eaeaea;
+      clear: both;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .photo-area {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .photo-area img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+
+    @media (max-width: 768px) {
+      body { min-width: 0; }
+      .container { flex-direction: column; }
+      main, aside { width: 100%; }
+      nav ul { flex-direction: column; align-items: flex-start; }
+    }
   </style>
- </head>
- <body onload="javascript: alert('蔣承祐 4B455024');">
- <body>
+</head>
+<body onload="console.log('蔣承祐 4B455024');">
   <header>
-   <h1><p>&ensp;</p><p>頁首:Hello, World!!</h1>
-   <h4>    好網業</h4>
-   <p>&ensp;</p>
- </header>
- <nav>      <h1><i class="fa fa-server" aria-hidden="true"></i>導覽列、<i class="fa fa-newspaper-o" aria-hidden="true"></i>關於我、<i class="fa fa-thumbs-up" aria-hidden="true"></i>作品集、<i class="fa fa-file" aria-hidden="true"></i>資料、<i class="fa fa-file-text-o" aria-hidden="true"></i>收藏</h1>
+    <h1>頁首: Hello, World!!</h1>
+    <h4>好網頁</h4>
+  </header>
 
- </nav>
- <aside> 
- <h1>左側邊欄</h1>
- </aside>
- <main>  <h1><i class="fa fa-address-card-o" aria-hidden="true"></i>主要資料</h1>
-   <p><i class="fa fa-balance-scale" aria-hidden="true"></i>班級:電商二甲</p>
-   <p><i class="fa fa-address-book" aria-hidden="true"></i>姓名:蔣承祐</p>
-   <p><i class="fa fa-flag" aria-hidden="true"></i>學號:4B455024
+  <nav aria-label="主導覽列">
+    <ul>
+      <li><a href="index.html"><i class="fa fa-server" aria-hidden="true"></i> 導覽列</a></li>
+      <li><a href="aboutme.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> 關於我</a></li>
+      <li><span><i class="fa fa-thumbs-up" aria-hidden="true"></i> 作品集</span></li>
+      <li><span><i class="fa fa-file" aria-hidden="true"></i> 資料</span></li>
+      <li><span><i class="fa fa-file-text-o" aria-hidden="true"></i> 收藏</span></li>
+    </ul>
+  </nav>
 
-<p><i class="fa fa-line-chart" aria-hidden="true"></i>自己的照片跟自己的名字</p>
-<img src="IMG_0084.jpg" width="10%" height="30%">
-<img src="name.PNG" width="10%" height="30%">
- </main>
- <footer>
+  <div class="container">
+    <aside>
+      <h1>左側邊欄</h1>
+    </aside>
+
+    <main>
+      <h1><i class="fa fa-address-card-o" aria-hidden="true"></i> 主要資料</h1>
+      <p><i class="fa fa-balance-scale" aria-hidden="true"></i> 班級: 電商二甲</p>
+      <p><i class="fa fa-address-book" aria-hidden="true"></i> 姓名: 蔣承祐</p>
+      <p><i class="fa fa-flag" aria-hidden="true"></i> 學號: 4B455024</p>
+      <p><i class="fa fa-line-chart" aria-hidden="true"></i> 自己的照片跟自己的名字</p>
+
+      <div class="photo-area">
+        <img src="pic/IMG_0084.jpg" alt="個人照片">
+        <img src="pic/name.png" alt="個人名稱圖示">
+      </div>
+    </main>
+  </div>
+
   <footer>
-   <p>頁尾&copy; 2026 南台公司</p>
-   <p><a href="#">Back to top</a></p>
- </footer>
+    <p>頁尾 &copy; 2026 南台公司</p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
 </body>
 </html>
