@@ -190,156 +190,186 @@
         <td align="center">                
             <br />                
             <div>	
-                <table cellspacing="0" cellpadding="6" rules="all" border="1" id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt" style="background-color:White;border-color:#D9D9D9;border-width:1px;border-style:solid;border-collapse:collapse;font-family:sans-serif;">		
+<table class="style8">        
+    <tr>            
+        <td align="center">&nbsp;</td>            
+        <td align="left" width="160">&nbsp;</td>        
+    </tr>        
+    <tr>            
+        <td align="center">                
+            <span id="ctl00_ContentPlaceHolder1_Label1" style="color:#1F4E79;font-size:16pt;font-weight:bold;">我的課表</span>            
+        </td>            
+        <td align="left" width="160">&nbsp;</td>        
+    </tr>        
+    <tr>            
+        <td align="center">                
+            <br />                
+            <div>	
+                <table cellspacing="0" cellpadding="6" rules="all" border="1" id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt" style="background-color:White;border-color:#B0C4DE;border-width:1px;border-style:solid;border-collapse:collapse;font-family:sans-serif;text-align:center;">		
+                    <!-- 1-1. 表格上方標題 -->
+                    <caption style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px; color: #1F4E79;">113學年度 第一學期 個人課表</caption>
+                    
+                    <!-- 1-2. 欄位上方標題格 (星期) -->
                     <tr style="color:White;background-color:#1F4E79;font-weight:bold;height:35px;">			
-                        <th align="center" scope="col">時間／星期</th>
-                        <th align="center" scope="col">一</th>
-                        <th align="center" scope="col">二</th>
-                        <th align="center" scope="col">三</th>
-                        <th align="center" scope="col">四</th>
-                        <th align="center" scope="col">五</th>
-                        <th align="center" scope="col">六</th>
-                        <th align="center" scope="col">日</th>		
+                        <th scope="col" style="width:110px;">時間／星期</th>
+                        <th scope="col" style="width:100px;">一</th>
+                        <th scope="col" style="width:100px;">二</th>
+                        <th scope="col" style="width:100px;">三</th>
+                        <th scope="col" style="width:100px;">四</th>
+                        <th scope="col" style="width:100px;">五</th>
+                        <th scope="col" style="width:100px;">六</th>
+                        <th scope="col" style="width:100px;">日</th>		
                     </tr>
+
+                    <!-- 第1節 -->
                     <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第1節<br/>08:10 ~ 09:00</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl02_l_7"></span></td>		
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第1節<br/>08:10 ~ 09:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第2節 (包含多堂連上3節的跨列合併 rowspan="3") -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第2節<br/>09:10 ~ 10:00</th>
+                        <!-- 1-3. 跨列合併 2~4節 -->
+                        <!-- 1-4. 不同課程使用不同底色 -->
+                        <td rowspan="3" style="background-color:#FFF2CC;">網頁設計<br/>丁介人<br/>T0806</td>
+                        <td rowspan="3" style="background-color:#E2EFDA;">行銷管理<br/>曾碧卿<br/>T0804</td>
+                        <td></td>
+                        <td rowspan="3" style="background-color:#FCE4D6;">資料庫系統<br/>丁介人<br/>T0806</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第3節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第3節<br/>10:10 ~ 11:00</th>
+                        <!-- 1-3. 跨列合併 3~4節 -->
+                        <td rowspan="2" style="background-color:#D9E1F2;">現代文學導讀<br/>羅夏美<br/>T0104</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第4節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第4節<br/>11:10 ~ 12:00</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 1-3. 跨欄合併：午休時間 (colspan="7") -->
+                    <tr style="background-color:#EAECEE;font-weight:bold;color:#555555;">
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">午休<br/>12:00 ~ 12:50</th>
+                        <td colspan="7">午休 / 用餐時間</td>
+                    </tr>
+
+                    <!-- 第5節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第5節<br/>12:50 ~ 13:40</th>
+                        <!-- 1-3. 跨列合併 5~7節 -->
+                        <td rowspan="3" style="background-color:#E1D5E7;">統計學<br/>陳忠和<br/>T0104</td>
+                        <td style="background-color:#F8CECC;">導師時間<br/>王鵬森<br/>T0804</td>
+                        <!-- 1-3. 跨列合併 5~6節 -->
+                        <td rowspan="2" style="background-color:#D5E8D4;">台灣與世界<br/>盧彥光<br/>W0404</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第6節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第6節<br/>13:50 ~ 14:40</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第7節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第7節<br/>14:50 ~ 15:40</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第8節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第8節<br/>15:50 ~ 16:40</th>
+                        <!-- 1-3. 跨列合併 8~9節 -->
+                        <td rowspan="2" style="background-color:#DAE8FC;">體育生活(三)：網球<br/>陳新福</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 第9節 -->
+                    <tr style="color:#333333;background-color:#FFFFFF;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第9節<br/>16:50 ~ 17:40</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
+                    </tr>
+
+                    <!-- 夜間課程分隔區 -->
+                    <tr style="color:#333333;background-color:#F2F4F8;">			
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第11節<br/>18:20 ~ 19:05</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
                     </tr>
                     <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第2節<br/>09:10 ~ 10:00</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_1"><br/>網頁設計<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_2"><br/>行銷管理<br/>曾碧卿 T0804</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_4"><br/>資料庫系統<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl03_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第3節<br/>10:10 ~ 11:00</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_1"><br/>網頁設計<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_2"><br/>行銷管理<br/>曾碧卿 T0804</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_3"><br/>現代文學導讀<br/>羅夏美 T0104</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_4"><br/>資料庫系統<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl04_l_7"></span></td>		
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第12節<br/>19:05 ~ 19:50</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
                     </tr>
                     <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第4節<br/>11:10 ~ 12:00</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_1"><br/>網頁設計<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_2"><br/>行銷管理<br/>曾碧卿 T0804</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_3"><br/>現代文學導讀<br/>羅夏美 T0104</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_4"><br/>資料庫系統<br/>丁介人 T0806</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl05_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第5節<br/>12:50 ~ 13:40</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_1"><br/>統計學<br/>陳忠和 T0104</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_2"><br/>導師時間<br/>王鵬森 T0804</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_3"><br/>台灣與世界<br/>盧彥光 W0404</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl06_l_7"></span></td>		
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第13節<br/>20:00 ~ 20:45</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
                     </tr>
                     <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第6節<br/>13:50 ~ 14:40</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_1"><br/>統計學<br/>陳忠和 T0104</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_3"><br/>台灣與世界<br/>盧彥光 W0404</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl07_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第7節<br/>14:50 ~ 15:40</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_1"><br/>統計學<br/>陳忠和 T0104</span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl08_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第8節<br/>15:50 ~ 16:40</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_1"><br/>體育生活(三)：網球(B)<br/>陳新福 </span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl09_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#FFFFFF;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第9節<br/>16:50 ~ 17:40</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_1"><br/>體育生活(三)：網球(B)<br/>陳新福 </span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl10_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#F2F4F8;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;"></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl11_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#EAECEE;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第11節<br/>18:20 ~ 19:05</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl12_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#EAECEE;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第12節<br/>19:05 ~ 19:50</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl13_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#EAECEE;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第13節<br/>20:00 ~ 20:45</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl14_l_7"></span></td>		
-                    </tr>
-                    <tr style="color:#333333;background-color:#EAECEE;">			
-                        <td align="center" style="color:White;background-color:#2F5597;font-size:Small;width:100px;">第14節<br/>20:45 ~ 21:30</td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_1"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_2"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_3"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_4"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_5"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_6"></span></td>
-                        <td align="left" style="font-size:Small;width:100px;"><span id="ctl00_ContentPlaceHolder1_ScheduleList1_dg_dt_ctl15_l_7"></span></td>		
+                        <th scope="row" style="color:White;background-color:#2F5597;font-size:Small;">第14節<br/>20:45 ~ 21:30</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>		
                     </tr>	
                 </table>
             </div> 
