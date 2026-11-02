@@ -175,30 +175,27 @@
     <img class="profile" src="pic/name.png" alt="個人圖示">
   </main>
 
-<!-- 引入 W3.CSS 樣式表 (包含 Hoverable 功能) -->
+<!-- 引入 W3.CSS 樣式表 -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <!-- ［我的課表］段落 -->
 <section>
     <div style="color: #1F4E79; font-size: 16pt; font-weight: bold; margin-bottom: 10px;">我的課表</div>
     
-    <div>    
-        <!-- 1-5. 使用 W3.CSS 的 w3-table, w3-bordered 與 w3-hoverable (滑鼠滑過會變色) -->
-        <table class="w3-table w3-bordered w3-hoverable" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%;">        
+    <div style="width: 100%; overflow-x: auto;">    
+        <!-- 加上 w3-bordered 以顯示格線 -->
+        <table class="w3-table w3-bordered w3-hoverable" style="background-color:White; border-collapse:collapse; font-family:sans-serif; text-align:center; width:100%; table-layout: fixed; word-break: break-all;">        
             
-            <!-- 1-1. 表格上方標題 -->
-            <caption style="font-size: 1.2em; font-weight: bold; margin-bottom: 8px; color: #1F4E79;">113學年度 第一學期 個人課表</caption>
-            
-            <!-- 1-2. 欄位上方標題格 (星期) -->
+            <!-- 欄位上方標題格 (星期) -->
             <tr style="color:White; background-color:#1F4E79; font-weight:bold; height:35px;">            
-                <th scope="col" style="width:110px; text-align:center;">時間／星期</th>
-                <th scope="col" style="text-align:center;">一</th>
-                <th scope="col" style="text-align:center;">二</th>
-                <th scope="col" style="text-align:center;">三</th>
-                <th scope="col" style="text-align:center;">四</th>
-                <th scope="col" style="text-align:center;">五</th>
-                <th scope="col" style="text-align:center;">六</th>
-                <th scope="col" style="text-align:center;">日</th>        
+                <th scope="col" style="width:11%; text-align:center;">時間／星期</th>
+                <th scope="col" style="width:12.7%; text-align:center;">一</th>
+                <th scope="col" style="width:12.7%; text-align:center;">二</th>
+                <th scope="col" style="width:12.7%; text-align:center;">三</th>
+                <th scope="col" style="width:12.7%; text-align:center;">四</th>
+                <th scope="col" style="width:12.7%; text-align:center;">五</th>
+                <th scope="col" style="width:12.7%; text-align:center;">六</th>
+                <th scope="col" style="width:12.7%; text-align:center;">日</th>        
             </tr>
 
             <!-- 第1節 -->
@@ -207,10 +204,9 @@
                 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>        
             </tr>
 
-            <!-- 第2節 (1-3. 跨列合併 rowspan="3") -->
+            <!-- 第2節 (跨列合併 rowspan="3") -->
             <tr>            
                 <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">第2節<br/>09:10 ~ 10:00</th>
-                <!-- 1-4. 不同課程使用不同底色與教室 -->
                 <td rowspan="3" style="background-color:#FFF2CC; vertical-align:middle;">網頁設計<br/>丁介人<br/>T0806</td>
                 <td rowspan="3" style="background-color:#E2EFDA; vertical-align:middle;">行銷管理<br/>曾碧卿<br/>T0804</td>
                 <td></td>
@@ -231,7 +227,7 @@
                 <td></td><td></td><td></td>        
             </tr>
 
-            <!-- 1-3. 跨欄合併：午休時間 (colspan="7") -->
+            <!-- 跨欄合併：午休時間 (colspan="7") -->
             <tr style="background-color:#EAECEE; font-weight:bold; color:#555555;">
                 <th scope="row" style="color:White; background-color:#2F5597; font-size:Small; text-align:center;">午休<br/>12:00 ~ 12:50</th>
                 <td colspan="7">午休 / 用餐時間</td>
