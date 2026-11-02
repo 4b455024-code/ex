@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>線上問卷調查</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .question-title {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .question-desc {
+            color: #666;
+            font-size: 0.9em;
+            margin: 4px 0 10px 0;
+        }
+        .button-group {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" method="post">
+        <!-- 5-2. 將所有表單欄位框起來 -->
+        <fieldset>
+            <legend><strong>線上問卷調查表單</strong></legend>
+
+            <!-- 1. 是非題 (checkbox) -->
+            <div class="question-block">
+                <div class="question-title">1. 是非題</div>
+                <p class="question-desc">(說明：請勾選同意或符合的選項)</p>
+                <label>
+                    <input type="checkbox" name="q1_agree" value="yes"> 我已閱讀並同意本問卷之個人資料保護條款
+                </label>
+            </div>
+
+            <!-- 2. 單選題 (radio) -->
+            <div class="question-block">
+                <div class="question-title">2. 單選題</div>
+                <p class="question-desc">(說明：請從下列選項中選擇一項最符合的)</p>
+                <label><input type="radio" name="q2_gender" value="male"> 男</label>&nbsp;&nbsp;
+                <label><input type="radio" name="q2_gender" value="female"> 女</label>&nbsp;&nbsp;
+                <label><input type="radio" name="q2_gender" value="other"> 其他</label>
+            </div>
+
+            <!-- 3. 單選題 (select) -->
+            <div class="question-block">
+                <div class="question-title">3. 單選題</div>
+                <p class="question-desc">(說明：請點擊下拉選單選擇最高學歷)</p>
+                <select name="q3_education">
+                    <option value="">-- 請選擇學歷 --</option>
+                    <option value="highschool">高中職</option>
+                    <option value="bachelor">學士</option>
+                    <option value="master">碩士</option>
+                    <option value="phd">博士</option>
+                </select>
+            </div>
+
+            <!-- 4. 複選題 (checkbox) -->
+            <div class="question-block">
+                <div class="question-title">4. 複選題</div>
+                <p class="question-desc">(說明：可勾選多個感興趣的程式語言主題)</p>
+                <label><input type="checkbox" name="q4_interest" value="html"> HTML/CSS</label>&nbsp;&nbsp;
+                <label><input type="checkbox" name="q4_interest" value="js"> JavaScript</label>&nbsp;&nbsp;
+                <label><input type="checkbox" name="q4_interest" value="python"> Python</label>&nbsp;&nbsp;
+                <label><input type="checkbox" name="q4_interest" value="db"> 資料庫</label>
+            </div>
+
+            <!-- 5. 複選題 (select multiple) -->
+            <div class="question-block">
+                <div class="question-title">5. 複選題</div>
+                <p class="question-desc">(說明：按住 Ctrl 或 Cmd 鍵可複選常用的瀏覽器)</p>
+                <select name="q5_browsers" multiple size="4">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="edge">Microsoft Edge</option>
+                    <option value="safari">Safari</option>
+                </select>
+            </div>
+
+            <!-- 6. 填充題 (text) -->
+            <div class="question-block">
+                <div class="question-title">6. 填充題</div>
+                <p class="question-desc">(說明：請輸入您的姓名或暱稱)</p>
+                <input type="text" name="q6_name" placeholder="請在此輸入文字">
+            </div>
+
+            <!-- 7. 填充題 (number) -->
+            <div class="question-block">
+                <div class="question-title">7. 填充題</div>
+                <p class="question-desc">(說明：限定輸入數字，請填寫您的年齡)</p>
+                <input type="number" name="q7_age" min="1" max="120" placeholder="例如：20">
+            </div>
+
+            <!-- 8. 填充題 (date) -->
+            <div class="question-block">
+                <div class="question-title">8. 填充題</div>
+                <p class="question-desc">(說明：限定選擇日期，請選擇預計填答日期)</p>
+                <input type="date" name="q8_date">
+            </div>
+
+            <!-- 9. 問答題 (textarea) -->
+            <div class="question-block">
+                <div class="question-title">9. 問答題</div>
+                <p class="question-desc">(說明：請輸入寶貴建議，高度為三橫列以上)</p>
+                <textarea name="q9_feedback" rows="4" cols="50" placeholder="請在此輸入詳細內容..."></textarea>
+            </div>
+
+            <!-- 5-1. [送出] 與 [重設] 按鈕 (button) -->
+            <div class="button-group">
+                <button type="submit">送出</button>
+                <button type="reset">重設</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
