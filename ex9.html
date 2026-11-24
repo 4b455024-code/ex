@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>My Music Band</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+
+/* 1. 網頁整體背景 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+
+/* 2. 導覽列改成深藍色 */
+.navbar {
+    background-color: #142d4e;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.navbar a {
+    float: left;
+    color: white;
+    padding: 16px 22px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f4b942;
+    color: black;
+}
+
+
+/* 3. 輪播圖片 */
+.slides {
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/* 內容區域 */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #142d4e;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+
+p {
+    line-height: 1.8;
+}
+
+/* 4. About 介紹區 */
+.about {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+
+/* 5. 成員卡片 */
+.member {
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.member img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+
+.member p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #142d4e;
+}
+
+
+/* 6. 聯絡區域 */
+.contact {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.contact input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+
+.contact button {
+    background-color: #142d4e;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.contact button:hover {
+    background-color: #f4b942;
+    color: black;
+}
+
+
+/* 地圖 */
+
+.map {
+    width: 100%;
+}
+
+
+/* 7. 頁尾 */
+.footer {
+    background-color: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* 手機版 */
+@media screen and (max-width: 600px) {
+    .member {
+        width: 90%;
+    }
+
+
+    .navbar a {
+        padding: 14px 10px;
+    }
+}
+
+
+</style>
+
+</head>
+
+
+<body id="home">
+
+
+<!-- 導覽列 -->
+
+<div class="navbar">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#members">Members</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+
+<!-- 3. 輪播圖片 -->
+<img class="slides" src="img_la.jpg" alt="Los Angeles">
+<img class="slides" src="img_ny.jpg" alt="New York">
+
+<img class="slides" src="img_ch.jpg" alt="Chicago">
+
+
+<script type="text/javascript">
+
+var slideIndex = 0;
+
+function showSlides() {
+
+    var allImages = document.getElementsByTagName("img");
+
+    var pictures = [];
+
+    for (var i = 0; i < allImages.length; i++) {
+        if (allImages[i].className == "slides")
+ {
+            pictures.push(allImages[i]);
+        }
+    }
+
+    for (var j = 0; j < pictures.length; j++) {
+        pictures[j].style.display = "none";
+    }
+
+
+    slideIndex++;
+
+    if (slideIndex > pictures.length) {
+        slideIndex = 1;
+    }
+
+    pictures[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 2500);
+}
+
+showSlides();
+
+
+</script>
+
+
+<!-- 4. About 介紹 -->
+
+<div class="container about" id="about">
+
+<h1>Welcome to My Music Band</h1>
+
+
+<p>
+Welcome to our music website!
+We are a passionate music band who love
+creating wonderful music and sharing happiness
+with everyone. Music brings people together
+and makes life more beautiful.
+</p>
+
+</div>
+
+
+<!-- 5. 成員介紹 -->
+<div class="container" id="members">
+
+<h2>Our Band Members</h2>
+
+<div class="member">
+<img src="img_bandmember.jpg" alt="John">
+
+<p>John</p>
+</div>
+
+<div class="member">
+<img src="img_bandmember.jpg" alt="Mike">
+<p>Mike</p>
+</div>
+
+<div class="member">
+<img src="img_bandmember.jpg" alt="Lisa">
+<p>Lisa</p>
+</div>
+
+</div>
+
+
+<!-- 6. 聯絡我們 -->
+<div class="container contact" id="contact">
+
+<h2>CONTACT US</h2>
+
+
+<p>Address: Taipei, Taiwan</p>
+<p>Phone: 0912-345-678</p>
+<p>Email: musicband@example.com</p>
+
+
+<p><i>Do you love music? Leave us a message!</i></p>
+
+<form action="#" method="post">
+
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="text" placeholder="Your Email" required>
+
+
+<input type="text" placeholder="Your Message" required>
+
+<p>
+<button type="submit">SEND MESSAGE</button>
+</p>
+
+</form>
+
+</div>
+
+<!-- 地圖 -->
+<img class="map" src="map.jpg" alt="Map">
+
+
+<!-- 7、8. 頁尾版權 -->
+<div class="footer">
+
+<p>My Music Band</p>
+
+<p>Copyright c 2026 My Music Band. All Rights Reserved.</p>
+
+</div>
+
+</body>
+</html>
