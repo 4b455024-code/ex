@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
-
 <head>
-
 <meta charset="UTF-8">
-
 <title>My Music Band</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 <style>
-
-
-/* 1. ºô­¶¾ãÅé­I´º */
+/* 1. ç¶²é æ•´é«”èƒŒæ™¯ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,8 +14,7 @@ body {
     color: #333;
 }
 
-
-/* 2. ¾ÉÄı¦C§ï¦¨²`ÂÅ¦â */
+/* 2. å°è¦½åˆ—æ”¹æˆæ·±è—è‰² */
 .navbar {
     background-color: #142d4e;
     overflow: hidden;
@@ -32,7 +23,6 @@ body {
     width: 100%;
     z-index: 10;
 }
-
 
 .navbar a {
     float: left;
@@ -46,22 +36,19 @@ body {
     color: black;
 }
 
-
-/* 3. ½ü¼½¹Ï¤ù */
+/* 3. è¼ªæ’­åœ–ç‰‡ */
 .slides {
     display: none;
     width: 100%;
     margin-top: 50px;
 }
 
-
-/* ¤º®e°Ï°ì */
+/* å…§å®¹å€åŸŸ */
 .container {
     max-width: 1000px;
     margin: auto;
     padding: 35px 20px;
 }
-
 
 h1, h2 {
     text-align: center;
@@ -72,12 +59,11 @@ h1 {
     font-size: 34px;
 }
 
-
 p {
     line-height: 1.8;
 }
 
-/* 4. About ¤¶²Ğ°Ï */
+/* 4. About ä»‹ç´¹å€ */
 .about {
     background-color: white;
     padding: 30px;
@@ -85,8 +71,7 @@ p {
     border-radius: 8px;
 }
 
-
-/* 5. ¦¨­û¥d¤ù */
+/* 5. æˆå“¡å¡ç‰‡ */
 .member {
     display: inline-block;
     width: 28%;
@@ -98,12 +83,10 @@ p {
     vertical-align: top;
 }
 
-
 .member img {
     width: 80%;
     border-radius: 50%;
 }
-
 
 .member p {
     font-size: 18px;
@@ -111,15 +94,13 @@ p {
     color: #142d4e;
 }
 
-
-/* 6. Ápµ¸°Ï°ì */
+/* 6. è¯çµ¡å€åŸŸ */
 .contact {
     background-color: white;
     padding: 30px;
     text-align: center;
     margin-top: 20px;
 }
-
 
 .contact input {
     width: 90%;
@@ -129,7 +110,6 @@ p {
     font-size: 15px;
 }
 
-
 .contact button {
     background-color: #142d4e;
     color: white;
@@ -138,21 +118,17 @@ p {
     cursor: pointer;
 }
 
-
 .contact button:hover {
     background-color: #f4b942;
     color: black;
 }
 
-
-/* ¦a¹Ï */
-
+/* åœ°åœ– */
 .map {
     width: 100%;
 }
 
-
-/* 7. ­¶§À */
+/* 7. é å°¾ */
 .footer {
     background-color: #142d4e;
     color: white;
@@ -160,60 +136,43 @@ p {
     padding: 20px;
 }
 
-
-/* ¤â¾÷ª© */
+/* æ‰‹æ©Ÿç‰ˆ */
 @media screen and (max-width: 600px) {
     .member {
         width: 90%;
     }
 
-
     .navbar a {
         padding: 14px 10px;
     }
 }
-
-
 </style>
-
 </head>
-
 
 <body id="home">
 
-
-<!-- ¾ÉÄı¦C -->
-
+<!-- å°è¦½åˆ— -->
 <div class="navbar">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#members">Members</a>
-
 <a href="#contact">Contact</a>
-
 </div>
 
-
-<!-- 3. ½ü¼½¹Ï¤ù -->
-<img class="slides" src="img_la.jpg" alt="Los Angeles">
-<img class="slides" src="img_ny.jpg" alt="New York">
-
-<img class="slides" src="img_ch.jpg" alt="Chicago">
-
+<!-- 3. è¼ªæ’­åœ–ç‰‡ -->
+<img class="slides" src="pic/img_la.jpg" alt="Los Angeles">
+<img class="slides" src="pic/img_ny.jpg" alt="New York">
+<img class="slides" src="pic/img_ch.jpg" alt="Chicago">
 
 <script type="text/javascript">
-
 var slideIndex = 0;
 
 function showSlides() {
-
     var allImages = document.getElementsByTagName("img");
-
     var pictures = [];
 
     for (var i = 0; i < allImages.length; i++) {
-        if (allImages[i].className == "slides")
- {
+        if (allImages[i].className == "slides") {
             pictures.push(allImages[i]);
         }
     }
@@ -222,30 +181,25 @@ function showSlides() {
         pictures[j].style.display = "none";
     }
 
-
     slideIndex++;
 
     if (slideIndex > pictures.length) {
         slideIndex = 1;
     }
 
-    pictures[slideIndex - 1].style.display = "block";
+    if (pictures.length > 0) {
+        pictures[slideIndex - 1].style.display = "block";
+    }
 
     setTimeout(showSlides, 2500);
 }
 
 showSlides();
-
-
 </script>
 
-
-<!-- 4. About ¤¶²Ğ -->
-
+<!-- 4. About ä»‹ç´¹ -->
 <div class="container about" id="about">
-
 <h1>Welcome to My Music Band</h1>
-
 
 <p>
 Welcome to our music website!
@@ -254,76 +208,55 @@ creating wonderful music and sharing happiness
 with everyone. Music brings people together
 and makes life more beautiful.
 </p>
-
 </div>
 
-
-<!-- 5. ¦¨­û¤¶²Ğ -->
+<!-- 5. æˆå“¡ä»‹ç´¹ -->
 <div class="container" id="members">
-
 <h2>Our Band Members</h2>
 
 <div class="member">
-<img src="img_bandmember.jpg" alt="John">
-
+<img src="pic/img_bandmember.jpg" alt="John">
 <p>John</p>
 </div>
 
 <div class="member">
-<img src="img_bandmember.jpg" alt="Mike">
+<img src="pic/img_bandmember.jpg" alt="Mike">
 <p>Mike</p>
 </div>
 
 <div class="member">
-<img src="img_bandmember.jpg" alt="Lisa">
+<img src="pic/img_bandmember.jpg" alt="Lisa">
 <p>Lisa</p>
 </div>
-
 </div>
 
-
-<!-- 6. Ápµ¸§Ú­Ì -->
+<!-- 6. è¯çµ¡æˆ‘å€‘ -->
 <div class="container contact" id="contact">
-
 <h2>CONTACT US</h2>
-
 
 <p>Address: Taipei, Taiwan</p>
 <p>Phone: 0912-345-678</p>
 <p>Email: musicband@example.com</p>
 
-
 <p><i>Do you love music? Leave us a message!</i></p>
 
 <form action="#" method="post">
-
-
 <input type="text" placeholder="Your Name" required>
-
 <input type="text" placeholder="Your Email" required>
-
-
 <input type="text" placeholder="Your Message" required>
-
 <p>
 <button type="submit">SEND MESSAGE</button>
 </p>
-
 </form>
-
 </div>
 
-<!-- ¦a¹Ï -->
-<img class="map" src="map.jpg" alt="Map">
+<!-- åœ°åœ– -->
+<img class="map" src="pic/map.jpg" alt="Map">
 
-
-<!-- 7¡B8. ­¶§Àª©Åv -->
+<!-- 7ã€8. é å°¾ç‰ˆæ¬Š -->
 <div class="footer">
-
 <p>My Music Band</p>
-
-<p>Copyright c 2026 My Music Band. All Rights Reserved.</p>
-
+<p>Copyright &copy; 2026 My Music Band. All Rights Reserved.</p>
 </div>
 
 </body>
